@@ -16,14 +16,14 @@ public class Alarm : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         _trigger = GetComponent<Trigger>();
-        _trigger.OnEnterTrigger += OnEnterTrigger;
-        _trigger.OnExitTrigger += OnExitTrigger;
+        _trigger.EnterTrigger += OnEnterTrigger;
+        _trigger.ExitTrigger += OnExitTrigger;
     }
 
     private void OnDisable()
     {
-        _trigger.OnEnterTrigger -= OnEnterTrigger;
-        _trigger.OnExitTrigger -= OnExitTrigger;
+        _trigger.EnterTrigger -= OnEnterTrigger;
+        _trigger.ExitTrigger -= OnExitTrigger;
     }
 
     protected void OnEnterTrigger()

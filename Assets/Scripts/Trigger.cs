@@ -7,18 +7,18 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public event Action OnEnterTrigger;
-    public event Action OnExitTrigger;
+    public event Action EnterTrigger;
+    public event Action ExitTrigger;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent(typeof(Player)))
-            OnEnterTrigger.Invoke();
+            EnterTrigger.Invoke();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponent(typeof(Player)))
-            OnExitTrigger.Invoke();
+            ExitTrigger.Invoke();
     }
 }

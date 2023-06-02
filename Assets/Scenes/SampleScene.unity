@@ -384,7 +384,6 @@ GameObject:
   - component: {fileID: 612489291}
   - component: {fileID: 612489293}
   - component: {fileID: 612489292}
-  - component: {fileID: 612489294}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -458,19 +457,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &612489294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612489290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c079aecbbd1bf44940e491133ef481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _alarmView: {fileID: 672514054}
 --- !u!1 &672514049
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +468,7 @@ GameObject:
   - component: {fileID: 672514051}
   - component: {fileID: 672514050}
   - component: {fileID: 672514053}
+  - component: {fileID: 672514055}
   - component: {fileID: 672514054}
   m_Layer: 0
   m_Name: Home Space
@@ -636,10 +623,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 672514049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb2f82d08549b64ea0ddbb108491116, type: 3}
+  m_Script: {fileID: 11500000, guid: ac16b561e8b6a2644867b564245155ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 672514053}
+--- !u!114 &672514055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672514049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbd10df0ab3e194281bd56d439ad5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &812638007
 GameObject:
   m_ObjectHideFlags: 0
